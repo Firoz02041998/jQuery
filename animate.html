@@ -26,6 +26,10 @@
     <script>
         $(document).ready(function()
         {
+            $("#but1").click(function()
+            {
+                $("#third").slideUp(2000).slideDown(2000).fadeOut(1000).fadeIn(1000)
+            })
             $("#but2").click(function()
             {
                 $("#ani").animate({
