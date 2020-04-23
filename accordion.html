@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>jQuery UI</title>
+        <link rel="stylesheet" href="H:\Web Development\Javascript\style2.css">
+        <link rel="stylesheet" href="H:\Web Development\jqueryui\jquery-ui.css">
+        <link rel="stylesheet" href="H:\Web Development\jqueryui\jquery-ui.structure.css">
+        <link rel="stylesheet" href="H:\Web Development\jqueryui\jquery-ui.theme.css">
+    </head>
+    <body> 
+        <h1>Accordion</h3>
+        <div id="para">
+            <h3>Whats going on?</h4>
+            <p>Well the world is coming to an end</p>
+            <h3>App Development</h4>
+            <p>Would require JS, React Native</p>
+            <h3>Machine Learning</h4>
+            <p>Would require Python and its extensive libraries</p>
+        </div>
+    
+    </body>
+    <script src="H:\Web Development\jquery.js"></script>
+    <script src="H:\Web Development\jqueryui\jquery-ui.js"></script>     
+    <script>
+        $("#para").accordion({
+            collapsible:true,
+            event:"mouseover",
+            animate:500,
+            active:2,
+            icons: {header:"ui-icon-plus",activeHeader:"ui-icon-minus"}
+        });
+        
+    </script>
+
+</html>
